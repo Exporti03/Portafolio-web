@@ -1,185 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Darío Zuluaga Jiménez - Portafolio Profesional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Menú de Navegación -->
-  <nav>
-    <ul>
-      <li><a href="#about">Sobre Mí</a></li>
-      <li><a href="#experience">Experiencia</a></li>
-      <li><a href="#education">Educación</a></li>
-      <li><a href="#skills">Habilidades</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#certificates">Certificados</a></li>
-    </ul>
-  </nav>
+    <header>
+        <nav>
+            <div class="logo">Andrés Darío Zuluaga Jiménez</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Encabezado -->
-  <header>
-    <div class="header-content">
-      <img src="imagenes/foto.jpg" alt="Foto de [Tu Nombre]" class="profile-photo">
-      <h1>[Andrés Darío Zuluaga Jimenez]</h1>
-      <p> Administrador de Empresas y Desarrollador de Software | Apasionado por la tecnología</p>
-    </div>
-  </header>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <img src="img/imagen.jpg" alt=" Administrador de Empresas y Desarrollador de Software" class="profile-pic">
+                <h1>Hola, soy Andrés Darío Zuluaga Jiménez</h1>
+                <h2>Administrador de Empresas y Tecnólogo en Análisis y Desarrollo de Software</h2>
+                <p>Fusionando la visión estratégica del negocio con la innovación tecnológica para crear soluciones impactantes y eficientes.</p>
+                <a href="#proyectos" class="btn">Ver Proyectos</a>
+            </div>
+        </section>
 
-  <!-- Sobre Mí -->
-  <section id="about">
-    <h2>Sobre Mí</h2>
-    <p>
-      Hola, soy Andrés Darío. Administrador de Empresas con experiencia en gestión de proyectos, contratación estatal y apoyo técnico en el sector de
-      transporte terrestre y aeronáutico. He trabajado en el Ministerio de Transporte, donde apoyé la gestión de habilitaciones,
-      evaluación de trámites de capacidad transportadora y seguimiento de estadísticas empresariales, contribuyendo a la
-      modernización del transporte automotor de carga. Además, cuento con experiencia en orientación ocupacional y intermediación
-      laboral en el Servicio Nacional de Aprendizaje (SENA), donde promoví la inserción laboral de poblaciones vulnerables.
-      Actualmente, me encuentro en formación como Tecnólogo en Análisis y Desarrollo de Software en el SENA, complementando mis
-      habilidades técnicas y ampliando mi perfil hacia el ámbito tecnológico.
-    </p>
-  </section>
+        <section id="proyectos" class="proyectos-section">
+            <h2>Mis Proyectos</h2>
+            <div class="proyectos-grid">
+                <article class="proyecto-item hidden-fade">
+                    <h3>Sistema de Gestión de Clientes</h3>
+                    <p>Aplicación web para la administración de clientes, optimizando el seguimiento de ventas y comunicación. Desarrollado con HTML, CSS, JavaScript y una integración básica de API.</p>
+                    <img src="img/proyecto1.jpg" alt="Captura de pantalla del Sistema de Gestión de Clientes">
+                    <div class="proyecto-links">
+                        <a href="https://github.com/tu-usuario/nombre-del-proyecto-1" target="_blank">Código (GitHub)</a>
+                        <a href="https://demo.tu-dominio.com/proyecto1" target="_blank">Demo (si aplica)</a>
+                    </div>
+                </article>
+                <article class="proyecto-item hidden-fade">
+                    <h3>Plataforma de Reservas Online</h3>
+                    <p>Sitio web responsivo para reservas de servicios, mejorando la experiencia del usuario y la eficiencia operativa. Uso de formularios dinámicos con JavaScript y diseño adaptativo.</p>
+                    <img src="img/proyecto2.jpg" alt="Captura de pantalla de la Plataforma de Reservas Online">
+                    <div class="proyecto-links">
+                        <a href="https://github.com/tu-usuario/nombre-del-proyecto-2" target="_blank">Código (GitHub)</a>
+                        <a href="https://demo.tu-dominio.com/proyecto2" target="_blank">Demo (si aplica)</a>
+                    </div>
+                </article>
+                </div>
+        </section>
 
-  <!-- Experiencia -->
-  <section id="experience">
-    <h2>Experiencia</h2>
-    <div class="experience-item">
-      <h3>Apoyo Administrativo en el Ministerio de Transporte — Antioquia, Medellín</h3>
-      <p><strong>Fecha:</strong> Marzo 2023 — Diciembre 2024</p>
-      <p><strong>Descripción:</strong>Apoyar técnicamente la gestión y desarrollo de habilitaciones del transporte terrestre en sus diferentes modalidades, evaluando y tramitando ajustes o incrementos de capacidad transportadora. Realizar seguimiento a estadísticas de empresas, incluyendo capacidad operacional y otros indicadores, con enfoque en la modernización del transporte automotor de carga. Brindar soporte técnico en la elaboración de respuestas y conceptos para la Dirección Territorial, participar en reuniones del área y gestionar oportunamente peticiones, quejas, reclamos y otros documentos a través del sistema de gestión ORFEO.</p>
-    </div>
-    <div class="experience-item">
-      <h3>Profesional Aeronáutico — Aeronáutica Civil — Antioquia, Medellín</h3>
-      <p><strong>Fecha:</strong> Enero 2022 — Octubre 2022</p>
-      <p><strong>Descripción:</strong> Apoyar la estructuración de proyectos de inversión en la región noroccidental, dirigir y evaluar procesos de contratación estatal para infraestructura aeronáutica, realizar estudios financieros de factibilidad para contratistas, hacer seguimiento a obras en aeropuertos de la región y gestionar la liquidación de contratos estatales.</p>
-    </div>
-    <div class="experience-item">
-      <h3>Orientador Ocupacional
-        Servicio Nacional de Aprendizaje (SENA) — Antioquia, Medellín</h3>
-      <p><strong>Fecha:</strong> Marzo 2017 — Diciembre 2021</p>
-      <p><strong>Descripción:</strong> Brindar apoyo en la orientación ocupacional a población privada de la libertad, desarrollar proyectos y actividades para la inserción laboral de población vulnerable, y facilitar la intermediación laboral entre buscadores de empleo y empresarios a través de la Agencia Pública de Empleo.</p>
-    </div>
-  </section>
+        <section id="habilidades" class="habilidades-section">
+            <h2>Mis Habilidades</h2>
+            <div class="habilidades-grid">
+                <div class="habilidad-item hidden-fade">HTML5</div>
+                <div class="habilidad-item hidden-fade">CSS3</div>
+                <div class="habilidad-item hidden-fade">JavaScript (ES6+)</div>
+                <div class="habilidad-item hidden-fade">Responsive Design</div>
+                <div class="habilidad-item hidden-fade">Git & GitHub</div>
+                <div class="habilidad-item hidden-fade">Bases de Datos (SQL, NoSQL)</div>
+                <div class="habilidad-item hidden-fade">Análisis de Requisitos</div>
+                <div class="habilidad-item hidden-fade">Gestión de Proyectos</div>
+                <div class="habilidad-item hidden-fade">Metodologías Ágiles (Scrum)</div>
+                <div class="habilidad-item hidden-fade">Business Intelligence</div>
+                <div class="habilidad-item hidden-fade">Investigación de Mercados</div>
+                <div class="habilidad-item hidden-fade">Planificación Estratégica</div>
+                </div>
+        </section>
 
-  <!-- Educación -->
-  <section id="education">
-    <h2>Educación</h2>
-    <div class="education-item">
-      <h3>Administrador de Empresa, - [Universidad Católica Luis Amigo]</h3>
-      <p><strong>Fecha:</strong> Junio 2016</p>
-    </div>
-    <div class="education-item">
-      <h3>Tecnología en Análisis y Desarrollo de Software, SENA (En curso)</h3>
-      <p><strong>Fecha:</strong> Agosto 2024</p>
-    </div>
-  </section>
+        <section id="contacto" class="contacto-section">
+            <h2>Contáctame</h2>
+            <p>¿Tienes una idea o quieres colaborar? ¡Hablemos!</p>
+            <form action="https://formspree.io/f/tu-formspree-id" method="POST" class="hidden-fade">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Email" required>
+                <textarea name="message" placeholder="Tu Mensaje" rows="5" required></textarea>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+            <div class="social-links hidden-fade">
+                <a href="https://linkedin.com/in/tu-perfil-linkedin" target="_blank">LinkedIn</a>
+                <a href="https://github.com/tu-usuario-github" target="_blank">GitHub</a>
+                </div>
+        </section>
+    </main>
 
-  <!-- Curso -->
-  <section id="education">
-    <h2>Curso</h2>
-    <div class="education-item">
-      <h3>CRM: Administración de la Relación con los Clientes — Servicio Nacional de Aprendizaje (SENA)
-      </h3>
-      
-    </div>
-    <div class="education-item">
-      <h3>Desarrollo de Estrategias Comerciales Nuevas — Servicio Nacional de Aprendizaje (SENA)</h3>
-      
-    </div>
-  </section>
+    <footer>
+        <p>&copy; 2025 Andrés Darío Zuluaga Jiménez. Todos los derechos reservados.</p>
+    </footer>
 
-  <!-- Habilidades -->
-  <section id="skills">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>
-        <span>HTML</span>
-        <div class="stars" data-rating="4">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-      </li>
-      <li>
-        <span>CSS</span>
-        <div class="stars" data-rating="4">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-      </li>
-      <li>
-        <span>JavaScript</span>
-        <div class="stars" data-rating="5">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-      </li>
-      <li>
-        <span>React</span>
-        <div class="stars" data-rating="3">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-      </li>
-      <li>
-        <span>Node.js</span>
-        <div class="stars" data-rating="4">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Proyectos (Carrusel) -->
-  <section id="projects">
-    <h2>Proyectos</h2>
-    <div class="carousel">
-      <div class="carousel-item">
-        <img src="proyecto1.jpg" alt="Proyecto 1">
-        <p>Descripción del Proyecto 1</p>
-      </div>
-      <div class="carousel-item">
-        <img src="proyecto2.jpg" alt="Proyecto 2">
-        <p>Descripción del Proyecto 2</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certificados -->
-  <section id="certificates">
-    <h2>Certificados</h2>
-    <button class="certificate-button" onclick="openModal()">Ver Certificados</button>
-  </section>
-
-  <!-- Ventana Modal para Certificados -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h2>Mis Certificados</h2>
-      <div class="certificate-list">
-        <p><strong>Certificado en Desarrollo Web</strong> - [Plataforma]</p>
-        <p><strong>Certificado en JavaScript Avanzado</strong> - [Plataforma]</p>
-        <p><strong>Certificado en React</strong> - [Plataforma]</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Botón "Volver Arriba" -->
-  <button id="back-to-top" onclick="scrollToTop()">↑</button>
-
-  <!-- Pie de Página con Iconos -->
-  <footer>
-    <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/andres-dario-zuluaga-7b92511bb/" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/Exporti03" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="[Enlace a Twitter]" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </div>
-  </footer>
-
-  <script src="script
+    <script src="js/main.js"></script>
+</body>
+</html>

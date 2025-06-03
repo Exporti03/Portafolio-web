@@ -1,0 +1,371 @@
+/* Generales */
+:root {
+    --primary-color: #007bff; /* Un azul vibrante */
+    --secondary-color: #6c757d; /* Gris oscuro */
+    --dark-bg: #212529; /* Fondo oscuro principal */
+    --light-text: #f8f9fa; /* Texto claro */
+    --card-bg: #343a40; /* Fondo de tarjetas */
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Un azul más oscuro al pasar el mouse */
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 12px 25px; /* Ajustado el padding para un botón más robusto */
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+    font-size: 1.1em; /* Un poco más grande la fuente */
+    margin-top: 30px; /* Asegura espacio encima del botón */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    box-sizing: border-box; /* Importante para el padding */
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: var(--light-text);
+}
+
+/* Header y Navegación */
+header {
+    background-color: var(--dark-bg);
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--light-text);
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Sección Hero (Inicio) - Corregido espaciado */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/hero-bg.jpg') no-repeat center center/cover;
+    color: var(--light-text);
+    height: 200vh; /* Aumentado la altura para más espacio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; /* Añade espacio superior para evitar solapamiento con el header */
+    padding-bottom: 40px; /* Añade espacio inferior */
+    box-sizing: border-box; /* Fundamental para que padding y height funcionen juntos */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto; /* Centra el contenido */
+    padding: 0 20px; /* Padding horizontal para el texto en móviles */
+}
+
+/* Estilos para tu foto de perfil */
+.profile-pic {
+    width: 180px; /* Ajusta el tamaño según tu diseño */
+    height: 180px;
+    border-radius: 50%; /* Para hacerla circular */
+    object-fit: cover; /* Para asegurar que la imagen se vea bien dentro del círculo */
+    margin-bottom: 20px;
+    border: 4px solid var(--primary-color); /* Un borde sutil y profesional */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); /* Sombra suave para un efecto visual */
+    animation: fadeIn 1s ease-out; /* Animación de aparición para la imagen */
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px; /* Espacio extra debajo del h1 */
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero-content h2 {
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-bottom: 25px; /* Espacio extra debajo del h2 */
+    animation: fadeInUp 1s ease-out 0.2s;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px; /* Mucho más espacio debajo del párrafo para separar del botón */
+    max-width: 600px; /* Limita el ancho del párrafo para mejor lectura */
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 1s ease-out 0.4s;
+}
+
+
+/* Animaciones CSS (Para el hero y para el JS Intersection Observer) */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hidden-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Sección Proyectos */
+.proyectos-section {
+    background-color: var(--card-bg);
+    padding-top: 80px; /* Asegura que esta sección no empiece demasiado pegada al hero */
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+}
+
+.proyecto-item {
+    background-color: var(--dark-bg);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.proyecto-item:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto-item img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+    height: 200px; /* Altura fija para las imágenes de proyecto */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+
+.proyecto-item h3 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.proyecto-item p {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    color: var(--light-text);
+}
+
+.proyecto-links a {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Sección Habilidades */
+.habilidades-section {
+    background-color: var(--dark-bg);
+}
+
+.habilidades-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+}
+
+.habilidad-item {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.habilidad-item:hover {
+    background-color: #0056b3;
+}
+
+/* Sección Contacto */
+.contacto-section {
+    background-color: var(--card-bg);
+}
+
+.contacto-section p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.contacto-section form {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-section input[type="text"],
+.contacto-section input[type="email"],
+.contacto-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: var(--border-radius);
+    background-color: #444;
+    color: var(--light-text);
+    font-size: 1em;
+}
+
+.contacto-section input::placeholder,
+.contacto-section textarea::placeholder {
+    color: #bbb;
+}
+
+.contacto-section button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.social-links a {
+    font-size: 1.1em;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333;
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
