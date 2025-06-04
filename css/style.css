@@ -150,15 +150,15 @@ nav ul li a:hover::after {
 }
 
 .hero-content h2 {
-    font-size: 1.8em;
+    font-size: 1.2em;
     color: var(--primary-color);
     margin-bottom: 25px; /* Espacio extra debajo del h2 */
     animation: fadeInUp 1s ease-out 0.2s;
 }
 
 .hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 40px; /* Mucho más espacio debajo del párrafo para separar del botón */
+    font-size: 1.0em;
+    margin-bottom: 10px; /* Mucho más espacio debajo del párrafo para separar del botón */
     max-width: 600px; /* Limita el ancho del párrafo para mejor lectura */
     margin-left: auto;
     margin-right: auto;
