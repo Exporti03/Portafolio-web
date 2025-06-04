@@ -115,7 +115,7 @@ nav ul li a:hover::after {
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/hero-bg.jpg') no-repeat center center/cover;
     color: var(--light-text);
-    height: 80vh; /* Aumentado la altura para más espacio */
+    height: 120vh; /* Aumentado la altura para más espacio */
     display: flex;
     justify-content: center;
     align-items: center;
