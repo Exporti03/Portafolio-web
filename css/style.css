@@ -133,8 +133,8 @@ nav ul li a:hover::after {
 
 /* Estilos para tu foto de perfil */
 .profile-pic {
-    width: 180px; /* Ajusta el tamaño según tu diseño */
-    height: 180px;
+    width: 300px; /* Ajusta el tamaño según tu diseño */
+    height: 300px;
     border-radius: 50%; /* Para hacerla circular */
     object-fit: cover; /* Para asegurar que la imagen se vea bien dentro del círculo */
     margin-bottom: 20px;
