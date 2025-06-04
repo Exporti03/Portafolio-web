@@ -115,13 +115,13 @@ nav ul li a:hover::after {
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/hero-bg.jpg') no-repeat center center/cover;
     color: var(--light-text);
-    height: 150vh; /* Aumentado la altura para más espacio */
+    height: 90vh; /* Aumentado la altura para más espacio */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 40px; /* Añade espacio superior para evitar solapamiento con el header */
-    padding-bottom: 40px; /* Añade espacio inferior */
+    padding-top: 80px; /* Añade espacio superior para evitar solapamiento con el header */
+    padding-bottom: 60px; /* Añade espacio inferior */
     box-sizing: border-box; /* Fundamental para que padding y height funcionen juntos */
 }
 
@@ -133,8 +133,8 @@ nav ul li a:hover::after {
 
 /* Estilos para tu foto de perfil */
 .profile-pic {
-    width: 300px; /* Ajusta el tamaño según tu diseño */
-    height: 300px;
+    width: 180px; /* Ajusta el tamaño según tu diseño */
+    height: 180px;
     border-radius: 50%; /* Para hacerla circular */
     object-fit: cover; /* Para asegurar que la imagen se vea bien dentro del círculo */
     margin-bottom: 20px;
